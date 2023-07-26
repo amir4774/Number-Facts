@@ -11,11 +11,11 @@ const App = () => {
     const getFact = async () => {
       if (number) {
         // Get fact with axios
-        const res = await axios.get(`http://numbersapi.com/${number}`);
+        const res = await axios.get(`https://numbersapi.com/${number}`);
         setFact(res.data);
 
         // Get fact with fetch
-        // const res = await fetch(`http://numbersapi.com/${number}`);
+        // const res = await fetch(`https://numbersapi.com/${number}`);
         // const data = await res.text();
         // setFact(data);
       }
